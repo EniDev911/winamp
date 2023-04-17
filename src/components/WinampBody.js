@@ -13,16 +13,14 @@ export class WinampBody extends HTMLElement {
     return `
     div {
       display: flex;
+      flex-direction: column;
     }
 
     winamp-display {
-      background: red;
-      width: 102px;
     }
 
     winamp-controls {
-      background: blue;
-      width: 100%;
+      height: 45px;
     }
     `;
   }

@@ -11,7 +11,7 @@ export class WinampTitleBar extends HTMLElement {
       display:flex;
       width: 100%;
       height: 12px;
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -27px -15px;
     }
 
@@ -38,7 +38,7 @@ export class WinampTitleBar extends HTMLElement {
     }
 
     .about {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: 0 0;
       width: 10px;
       height: 9px;
@@ -51,7 +51,7 @@ export class WinampTitleBar extends HTMLElement {
 
     .titlebar {
       width: 228px;
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -42px -15px;
       image-rendering: pixelated;
     }
@@ -61,7 +61,7 @@ export class WinampTitleBar extends HTMLElement {
     }
 
     .top-button.minimize {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -269px -15px; 
       image-rendering: pixelated;
     }
@@ -71,7 +71,7 @@ export class WinampTitleBar extends HTMLElement {
     }
 
     .top-button.maximize {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -281px -15px;
       image-rendering: pixelated;
     }
@@ -81,7 +81,7 @@ export class WinampTitleBar extends HTMLElement {
     }
 
     .top-button.close {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -292px -15px;
       image-rendering: pixelated;
     }

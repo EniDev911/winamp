@@ -10,8 +10,9 @@ export class WinampLCDDisplay extends HTMLElement {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        width: 102px;
+        width: 166px;
         height: 52px;
+        margin-right: 2px;
       }
 
       .lcd {
