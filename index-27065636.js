@@ -4,7 +4,7 @@
       display:flex;
       width: 100%;
       height: 12px;
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -27px -15px;
     }
 
@@ -31,7 +31,7 @@
     }
 
     .about {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: 0 0;
       width: 10px;
       height: 9px;
@@ -44,7 +44,7 @@
 
     .titlebar {
       width: 228px;
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -42px -15px;
       image-rendering: pixelated;
     }
@@ -54,7 +54,7 @@
     }
 
     .top-button.minimize {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -269px -15px; 
       image-rendering: pixelated;
     }
@@ -64,7 +64,7 @@
     }
 
     .top-button.maximize {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -281px -15px;
       image-rendering: pixelated;
     }
@@ -74,7 +74,7 @@
     }
 
     .top-button.close {
-      background: url(/assets/titlebar.png);
+      background: url(./assets/titlebar.png);
       background-position: -292px -15px;
       image-rendering: pixelated;
     }
@@ -99,8 +99,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        width: 102px;
+        width: 166px;
         height: 52px;
+        margin-right: 2px;
       }
 
       .lcd {
@@ -113,17 +114,21 @@
       <div class="lcd">
 
       </div>
-    `}}customElements.define("winamp-lcd-display",l);class c extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
+    `}}customElements.define("winamp-lcd-display",l);class p extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
     :host {
-      display: block;
-      width: 100%;
-      height: 57px;
+    }
+
+    .display {
+      display: flex;
     }
 
     .right-display {
       display: flex;
       flex-direction: column;
       width: 100%;
+      background: rgba(255, 0, 0, .3);
+      padding-top: 14px;
+      padding-left: 10px;
     }
 
     .right-display > div {
@@ -131,14 +136,14 @@
     
     .audio-data {
       font-family: W95FA;
-      font-size: 11px;
+      font-size: 9px;
       color: #00F800;
-      background: yellow;
     }
 
     .audio-info {
       width: 100%;
       height: 20px;
+      background: red;
     }
 
     .kbps, khz {}
@@ -170,23 +175,21 @@
           </div>
         </div>
       </div>
-    `}}class p extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
+    `}}class c extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
     `}connectedCallback(){this.render()}render(){this.shadowRoot.innerHTML=`
       <style>${this.styles}</style>
       <div></div>
-    `}}customElements.define("winamp-display",c);customElements.define("winamp-controls",p);class u extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
+    `}}customElements.define("winamp-display",p);customElements.define("winamp-controls",c);class u extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}get styles(){return`
     div {
       display: flex;
+      flex-direction: column;
     }
 
     winamp-display {
-      background: red;
-      width: 102px;
     }
 
     winamp-controls {
-      background: blue;
-      width: 100%;
+      height: 45px;
     }
     `}connectedCallback(){this.render()}render(){this.shadowRoot.innerHTML=`
       <style>${this.styles}</style>
@@ -200,7 +203,7 @@
       flex-direction: column;
       width: 275px;
       height: 116px;
-      background: url(/assets/main.png);
+      background: url(./assets/main.png);
       image-rendering: pixelated;
     }
 
